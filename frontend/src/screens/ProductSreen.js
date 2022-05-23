@@ -72,9 +72,12 @@ export default function ProductScreen() {
                                 </Row>
                             </ListGroup.Item>
                             <ListGroup.Item>
-                                <Button className="btn-block" type='button' disabled={product.countInStock === 0}>
-                                    Add to cart
-                                </Button>
+                                <Row>
+                                    <Button className="btn-block" type='button' disabled={product.countInStock === 0}>
+                                        Add to cart
+                                    </Button>
+                                </Row>
+                              
                            </ListGroup.Item>
                         </ListGroup>
                     </Card>

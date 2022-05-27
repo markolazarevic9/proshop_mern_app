@@ -7,12 +7,12 @@ export default function Product({ product }) {
 
   return (
    <Card className='my-3 p-3 rounded'>
-       <a onClick={() => navigate(`/product/${product._id}`)}>
+       <a onClick={() => navigate(`/products/${product._id}`)}>
             <Card.Img src={product.image} variant='top' />
        </a>
 
        <Card.Body>
-            <a onClick={() => navigate(`/product/${product._id}`)}>
+            <a onClick={() => navigate(`/products/${product._id}`)}>
                     <Card.Title as='div'>
                         <strong> {product.name}</strong>
                     </Card.Title>

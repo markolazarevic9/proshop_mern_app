@@ -9,7 +9,7 @@ export default function App() {
             <Route element={<HomeScreen/>} path="/" exact />
             {/* <Route element={<AboutUs />} path="/about-us" exact />
             <Route element={<Contact />} path="/contact" exact /> */}
-            <Route element={<ProductScreen />} path="/product/:id" exact />
+            <Route element={<ProductScreen />} path="/products/:id" exact />
             {/* <Route element={<NotFound />} path="*" /> */}
           </Routes>
      </BrowserRouter>

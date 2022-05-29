@@ -6,19 +6,19 @@ import { useParams, useNavigate, matchPath } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button, ListGroupItem } from "react-bootstrap";
 import { useDispatch, useSelector } from 'react-redux'
 import Rating from '../components/Rating'
-import axios from "axios";
 import { listProductDetails } from "../actions/productActions";
 
 export default function ProductScreen(props) {
     const dispatch = useDispatch()
-    // const [qty, setQty] = useState(0)
     const navigate = useNavigate();
     const { id } = useParams()
+
     const productDetails = useSelector(state => state.productDetails)
+
     const { loading, error, product } = productDetails
+
     useEffect(() => {
         dispatch(listProductDetails(id))
-        console.log(1)
     }, [dispatch])
 
     return (
